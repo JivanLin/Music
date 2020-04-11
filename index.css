@@ -1,0 +1,169 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	width: 100%;
+	height: auto;
+	background-color: #ccc
+}
+
+/*音乐界面*/
+#main {
+	width: 80%;
+	height: 600px;
+	margin: 1% auto;
+	border-radius: 50px;
+	position: relative;
+}
+
+/*左侧*/
+.block_left {
+	width: 35%;
+	height: 85%;
+	border-top-left-radius: 50px;
+	position: absolute;
+	background-color: white;
+	text-align: center;
+}
+
+/*图片专辑*/
+#singer {
+	width: 240px;
+	height: 240px;
+	margin: 20% auto;
+}
+
+#singer>img {
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 50px #888888;
+}
+
+/*歌曲名称*/
+.songName>p {
+	font-size: 26px;
+	color: gray;
+	font-weight: bold;
+}
+
+/*右侧*/
+.block_right {
+	width: 65%;
+	height: 85%;
+	border-top-right-radius: 50px;
+	position: absolute;
+	left: 35%;
+	text-align: center;
+	background: url("images/背景图.jpg") no-repeat;
+	background-size: cover;
+}
+
+/*歌词显示*/
+#lrc {
+	width: 80%;
+	height: 60%;
+	position: absolute;
+	left: 10%;
+	top: 20%;
+	overflow: hidden;
+}
+
+#lrcshow {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#lrcshow>p {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	opacity: 0.5;
+}
+
+#lrcshow>p.show {
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	opacity: 0.8;
+}
+
+/*底部*/
+.block_footer {
+	clear: both;
+	width: 100%;
+	height: 15%;
+	border-radius: 0px 0px 50px 50px;
+	position: absolute;
+	top: 85%;
+	background-color: gray;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*播放按钮*/
+#btn {
+	width: 20%;
+	height: auto;
+	display: inline-flex;
+	justify-content: space-around;
+}
+
+#btn>img:nth-child(odd) {
+	width: 50px;
+	height: 50px;
+	padding: 5px 0px;
+}
+
+#btn>img:nth-child(even) {
+	width: 60px;
+	height: 60px;
+}
+
+/*播放时间进度条*/
+.time {
+	width: 50%;
+	height: auto;
+}
+
+/*进度条*/
+#time_bar {
+	width: 100%;
+	height: 3px;
+	border: 1px solid black;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+#time_bar>div {
+	width: 0px;
+	height: 100%;
+	background-color: green;
+	border-radius: 10px;
+}
+
+/*时间显示*/
+#time_show {
+	width: 100%;
+	margin-top: 10px;
+	display: inline-flex;/*弹性布局*/
+	justify-content: space-between;/*两端对齐*/
+}
+
+/*控件按钮*/
+.list_btn {
+	width: 25%;
+	display: inline-flex;
+	justify-content: space-around;
+	float: left;
+}
+
+.list_btn>img {
+	width: 40px;
+	height: 40px;
+}
